@@ -1,0 +1,2502 @@
+[
+    {
+        "product_id": 1,
+        "supplier_id": 1,
+        "rationale": "A classic economic and negotiation Eurogame."
+    },
+    {
+        "product_id": 2,
+        "supplier_id": 1,
+        "rationale": "A quintessential tile-laying and territory-building Eurogame."
+    },
+    {
+        "product_id": 3,
+        "supplier_id": 1,
+        "rationale": "A cooperative strategy game with resource management elements."
+    },
+    {
+        "product_id": 4,
+        "supplier_id": 1,
+        "rationale": "A card-drafting civilization and economic game."
+    },
+    {
+        "product_id": 5,
+        "supplier_id": 1,
+        "rationale": "A deep, complex economic engine-builder."
+    },
+    {
+        "product_id": 6,
+        "supplier_id": 1,
+        "rationale": "A modern engine-building Eurogame."
+    },
+    {
+        "product_id": 7,
+        "supplier_id": 1,
+        "rationale": "A two-player strategic version of its parent Eurogame."
+    },
+    {
+        "product_id": 8,
+        "supplier_id": 4,
+        "rationale": "A modern abstract strategy and puzzle game."
+    },
+    {
+        "product_id": 9,
+        "supplier_id": 3,
+        "rationale": "A top-tier party game based on word association."
+    },
+    {
+        "product_id": 10,
+        "supplier_id": 1,
+        "rationale": "The original deck-building Eurogame."
+    },
+    {
+        "product_id": 11,
+        "supplier_id": 3,
+        "rationale": "An accessible, family-friendly gateway and set collection game."
+    },
+    {
+        "product_id": 12,
+        "supplier_id": 2,
+        "rationale": "A thematic hybrid game with miniatures, fighting, and economic elements."
+    },
+    {
+        "product_id": 13,
+        "supplier_id": 4,
+        "rationale": "A straightforward engine-building and set collection game with abstract qualities."
+    },
+    {
+        "product_id": 14,
+        "supplier_id": 3,
+        "rationale": "A family-friendly gateway game."
+    },
+    {
+        "product_id": 15,
+        "supplier_id": 1,
+        "rationale": "A classic worker-placement Eurogame focused on farming and economics."
+    },
+    {
+        "product_id": 16,
+        "supplier_id": 2,
+        "rationale": "A fantasy-themed territory control game with direct conflict."
+    },
+    {
+        "product_id": 17,
+        "supplier_id": 3,
+        "rationale": "A light, dice-rolling party game with a fighting theme."
+    },
+    {
+        "product_id": 18,
+        "supplier_id": 1,
+        "rationale": "A landmark role-selection Eurogame focused on economics and city-building."
+    },
+    {
+        "product_id": 19,
+        "supplier_id": 3,
+        "rationale": "A quick, light deduction and bluffing card game."
+    },
+    {
+        "product_id": 20,
+        "supplier_id": 4,
+        "rationale": "A two-player abstract puzzle game."
+    },
+    {
+        "product_id": 21,
+        "supplier_id": 3,
+        "rationale": "A creative and imaginative party game based on storytelling."
+    },
+    {
+        "product_id": 22,
+        "supplier_id": 1,
+        "rationale": "A classic economic Eurogame focused on network building."
+    },
+    {
+        "product_id": 23,
+        "supplier_id": 1,
+        "rationale": "A quintessential dice-rolling Eurogame about territory building."
+    },
+    {
+        "product_id": 24,
+        "supplier_id": 2,
+        "rationale": "A massive, thematic dungeon-crawl and adventure game with miniatures."
+    },
+    {
+        "product_id": 25,
+        "supplier_id": 1,
+        "rationale": "An engine-building game with worker-placement and city-building themes."
+    },
+    {
+        "product_id": 26,
+        "supplier_id": 2,
+        "rationale": "A thematic worker placement game set in the Dungeons & Dragons universe."
+    },
+    {
+        "product_id": 27,
+        "supplier_id": 1,
+        "rationale": "A classic and complex engine-building Eurogame with a sci-fi theme."
+    },
+    {
+        "product_id": 28,
+        "supplier_id": 3,
+        "rationale": "A social deduction and bluffing game with role selection."
+    },
+    {
+        "product_id": 29,
+        "supplier_id": 2,
+        "rationale": "An asymmetric wargame with a strong fantasy theme and high player interaction."
+    },
+    {
+        "product_id": 30,
+        "supplier_id": 2,
+        "rationale": "A highly thematic and complex cooperative game about fighting off invaders."
+    },
+    {
+        "product_id": 31,
+        "supplier_id": 2,
+        "rationale": "A legacy-style cooperative game with a strong narrative and thematic tension."
+    },
+    {
+        "product_id": 32,
+        "supplier_id": 1,
+        "rationale": "A classic worker placement Eurogame with dice mechanics."
+    },
+    {
+        "product_id": 33,
+        "supplier_id": 1,
+        "rationale": "A fast-paced two-player economic card game."
+    },
+    {
+        "product_id": 34,
+        "supplier_id": 3,
+        "rationale": "A push-your-luck, family-friendly game with bag-building mechanics."
+    },
+    {
+        "product_id": 35,
+        "supplier_id": 3,
+        "rationale": "A cooperative, family-friendly game focused on adventure and survival."
+    },
+    {
+        "product_id": 36,
+        "supplier_id": 1,
+        "rationale": "A worker-placement Eurogame with a strong farming and economic theme."
+    },
+    {
+        "product_id": 37,
+        "supplier_id": 3,
+        "rationale": "A humorous, take-that style party card game."
+    },
+    {
+        "product_id": 38,
+        "supplier_id": 2,
+        "rationale": "A highly thematic and strategic deck-building game with a sci-fi theme."
+    },
+    {
+        "product_id": 39,
+        "supplier_id": 1,
+        "rationale": "A heavy economic and strategy game focused on the industrial revolution."
+    },
+    {
+        "product_id": 40,
+        "supplier_id": 2,
+        "rationale": "A classic, highly thematic two-player wargame simulating the Cold War."
+    },
+    {
+        "product_id": 41,
+        "supplier_id": 3,
+        "rationale": "A cooperative party game centered around deduction and communication."
+    },
+    {
+        "product_id": 42,
+        "supplier_id": 4,
+        "rationale": "A family-friendly tile-laying game with simple rules and strategic depth."
+    },
+    {
+        "product_id": 43,
+        "supplier_id": 1,
+        "rationale": "A heavy and complex engine-building Eurogame about managing a zoo."
+    },
+    {
+        "product_id": 44,
+        "supplier_id": 2,
+        "rationale": "A classic strategy game of asymmetric factions and area control."
+    },
+    {
+        "product_id": 45,
+        "supplier_id": 3,
+        "rationale": "A light card-drafting party game with a set-collection mechanic."
+    },
+    {
+        "product_id": 46,
+        "supplier_id": 2,
+        "rationale": "A highly thematic wargame with miniatures and area control."
+    },
+    {
+        "product_id": 47,
+        "supplier_id": 3,
+        "rationale": "A classic party game of bluffing, deduction, and social interaction."
+    },
+    {
+        "product_id": 48,
+        "supplier_id": 1,
+        "rationale": "A negotiation and set-collection Eurogame with a farming theme."
+    },
+    {
+        "product_id": 49,
+        "supplier_id": 1,
+        "rationale": "A complex Eurogame combining deck-building and worker placement."
+    },
+    {
+        "product_id": 50,
+        "supplier_id": 4,
+        "rationale": "A classic two-player card game focused on set collection and push-your-luck."
+    },
+    {
+        "product_id": 51,
+        "supplier_id": 2,
+        "rationale": "A highly thematic and story-driven cooperative horror game."
+    },
+    {
+        "product_id": 52,
+        "supplier_id": 2,
+        "rationale": "A psychological survival game with a traitor mechanic and strong theme."
+    },
+    {
+        "product_id": 53,
+        "supplier_id": 2,
+        "rationale": "A fast-paced, two-player deck-building game focused on combat."
+    },
+    {
+        "product_id": 54,
+        "supplier_id": 1,
+        "rationale": "A worker-placement Eurogame with environmental and farming themes."
+    },
+    {
+        "product_id": 55,
+        "supplier_id": 3,
+        "rationale": "A cooperative party game centered around deduction and theme."
+    },
+    {
+        "product_id": 56,
+        "supplier_id": 2,
+        "rationale": "A cooperative, story-driven card game set in the Cthulhu mythos."
+    },
+    {
+        "product_id": 57,
+        "supplier_id": 2,
+        "rationale": "A cooperative adventure and survival game with a strong theme."
+    },
+    {
+        "product_id": 58,
+        "supplier_id": 4,
+        "rationale": "A tile-laying abstract strategy game with puzzle elements."
+    },
+    {
+        "product_id": 59,
+        "supplier_id": 1,
+        "rationale": "A cooperative trick-taking card game with evolving missions."
+    },
+    {
+        "product_id": 60,
+        "supplier_id": 2,
+        "rationale": "A deck-building adventure game with a push-your-luck mechanic."
+    },
+    {
+        "product_id": 61,
+        "supplier_id": 4,
+        "rationale": "An abstract puzzle game with dice drafting."
+    },
+    {
+        "product_id": 62,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame with a unique mancala-like worker placement mechanic."
+    },
+    {
+        "product_id": 63,
+        "supplier_id": 1,
+        "rationale": "A highly regarded strategic Eurogame with card-driven action selection."
+    },
+    {
+        "product_id": 64,
+        "supplier_id": 1,
+        "rationale": "A deep and strategic deck-building and route-building Eurogame."
+    },
+    {
+        "product_id": 65,
+        "supplier_id": 3,
+        "rationale": "A classic social deduction and bluffing party game."
+    },
+    {
+        "product_id": 66,
+        "supplier_id": 2,
+        "rationale": "The original collectible card game, highly thematic and focused on combat."
+    },
+    {
+        "product_id": 67,
+        "supplier_id": 1,
+        "rationale": "A heavy worker-placement Eurogame with a unique gear-based time mechanic."
+    },
+    {
+        "product_id": 68,
+        "supplier_id": 2,
+        "rationale": "A cooperative adventure game set in the Cthulhu mythos."
+    },
+    {
+        "product_id": 69,
+        "supplier_id": 4,
+        "rationale": "A pure abstract strategy game with god-like powers."
+    },
+    {
+        "product_id": 70,
+        "supplier_id": 4,
+        "rationale": "A two-player abstract strategy game with no board."
+    },
+    {
+        "product_id": 71,
+        "supplier_id": 4,
+        "rationale": "The ultimate classic abstract strategy game."
+    },
+    {
+        "product_id": 72,
+        "supplier_id": 2,
+        "rationale": "A heavily thematic app-driven cooperative horror and mystery game."
+    },
+    {
+        "product_id": 73,
+        "supplier_id": 2,
+        "rationale": "An epic, world-spanning cooperative adventure game against ancient evils."
+    },
+    {
+        "product_id": 74,
+        "supplier_id": 3,
+        "rationale": "A classic, mass-market family game based on luck and negotiation."
+    },
+    {
+        "product_id": 75,
+        "supplier_id": 3,
+        "rationale": "A light, luck-based party game with a humorous theme."
+    },
+    {
+        "product_id": 76,
+        "supplier_id": 2,
+        "rationale": "A classic semi-cooperative game of bluffing, intrigue, and survival."
+    },
+    {
+        "product_id": 77,
+        "supplier_id": 2,
+        "rationale": "A classic mass-market wargame of global conquest."
+    },
+    {
+        "product_id": 78,
+        "supplier_id": 3,
+        "rationale": "A card-drafting party game that expands on the original Sushi Go!"
+    },
+    {
+        "product_id": 79,
+        "supplier_id": 2,
+        "rationale": "A streamlined, more accessible version of the Gloomhaven adventure game system."
+    },
+    {
+        "product_id": 80,
+        "supplier_id": 3,
+        "rationale": "A party game centered around bluffing and negotiation."
+    },
+    {
+        "product_id": 81,
+        "supplier_id": 1,
+        "rationale": "A complex and strategic worker-placement Eurogame about cave farming."
+    },
+    {
+        "product_id": 82,
+        "supplier_id": 2,
+        "rationale": "An epic wargame of diplomacy, negotiation, and warfare in Westeros."
+    },
+    {
+        "product_id": 83,
+        "supplier_id": 3,
+        "rationale": "A fast-paced, real-time tile-laying game with a sci-fi theme."
+    },
+    {
+        "product_id": 84,
+        "supplier_id": 3,
+        "rationale": "A classic social deduction and party game."
+    },
+    {
+        "product_id": 85,
+        "supplier_id": 1,
+        "rationale": "A classic, highly strategic tile-laying Eurogame about city building."
+    },
+    {
+        "product_id": 86,
+        "supplier_id": 3,
+        "rationale": "A light and quick dice-rolling city-building game."
+    },
+    {
+        "product_id": 87,
+        "supplier_id": 1,
+        "rationale": "A highly-rated standalone expansion for the deck-building game Dominion."
+    },
+    {
+        "product_id": 88,
+        "supplier_id": 3,
+        "rationale": "A simple bluffing and party game with a hidden role mechanic."
+    },
+    {
+        "product_id": 89,
+        "supplier_id": 2,
+        "rationale": "A complex and deep solo/cooperative adventure game combining deck-building and RPG elements."
+    },
+    {
+        "product_id": 90,
+        "supplier_id": 2,
+        "rationale": "An epic, asymmetric wargame capturing the scale of the Galactic Civil War."
+    },
+    {
+        "product_id": 91,
+        "supplier_id": 3,
+        "rationale": "A classic party game of negotiation, bluffing, and variable alien powers."
+    },
+    {
+        "product_id": 92,
+        "supplier_id": 3,
+        "rationale": "A cooperative party game about silent communication and playing cards in order."
+    },
+    {
+        "product_id": 93,
+        "supplier_id": 4,
+        "rationale": "A classic word game based on tile-laying and vocabulary."
+    },
+    {
+        "product_id": 94,
+        "supplier_id": 1,
+        "rationale": "A strategic programming game focused on train-themed heists."
+    },
+    {
+        "product_id": 95,
+        "supplier_id": 3,
+        "rationale": "A popular party game with hidden roles, bluffing, and player elimination."
+    },
+    {
+        "product_id": 96,
+        "supplier_id": 2,
+        "rationale": "A semi-cooperative survival horror game with a traitor mechanic."
+    },
+    {
+        "product_id": 97,
+        "supplier_id": 1,
+        "rationale": "A heavy bag-building and engine-building Eurogame."
+    },
+    {
+        "product_id": 98,
+        "supplier_id": 1,
+        "rationale": "A complex and highly strategic civilization-building game."
+    },
+    {
+        "product_id": 99,
+        "supplier_id": 1,
+        "rationale": "A dice-based version of the complex sci-fi Eurogame, Race for the Galaxy."
+    },
+    {
+        "product_id": 100,
+        "supplier_id": 1,
+        "rationale": "A classic heavy worker-placement Eurogame from designer Uwe Rosenberg."
+    },
+    {
+        "product_id": 101,
+        "supplier_id": 4,
+        "rationale": "A flip-and-write game with city-building and puzzle elements."
+    },
+    {
+        "product_id": 102,
+        "supplier_id": 3,
+        "rationale": "A quick and simple auction and set-collection game."
+    },
+    {
+        "product_id": 103,
+        "supplier_id": 1,
+        "rationale": "A strategic dice-driven Eurogame about developing a city in the bazaar."
+    },
+    {
+        "product_id": 104,
+        "supplier_id": 4,
+        "rationale": "A legacy-style tile-laying game about mapping a fantasy kingdom."
+    },
+    {
+        "product_id": 105,
+        "supplier_id": 3,
+        "rationale": "A cooperative game that builds on the mechanics of Forbidden Island."
+    },
+    {
+        "product_id": 106,
+        "supplier_id": 3,
+        "rationale": "A social deduction and bluffing party game with a political theme."
+    },
+    {
+        "product_id": 107,
+        "supplier_id": 2,
+        "rationale": "A classic, modular block wargame with a strong theme."
+    },
+    {
+        "product_id": 108,
+        "supplier_id": 3,
+        "rationale": "A classic, mass-market card game known worldwide."
+    },
+    {
+        "product_id": 109,
+        "supplier_id": 2,
+        "rationale": "A highly strategic and asymmetric two-player card game."
+    },
+    {
+        "product_id": 110,
+        "supplier_id": 1,
+        "rationale": "A worker placement Eurogame with a focus on resource management."
+    },
+    {
+        "product_id": 111,
+        "supplier_id": 1,
+        "rationale": "A classic, highly strategic area-control Eurogame."
+    },
+    {
+        "product_id": 112,
+        "supplier_id": 3,
+        "rationale": "A light and fast card game about avoiding negative points."
+    },
+    {
+        "product_id": 113,
+        "supplier_id": 3,
+        "rationale": "A popular party game centered on deduction and word guessing."
+    },
+    {
+        "product_id": 114,
+        "supplier_id": 1,
+        "rationale": "A deep and complex worker placement Eurogame with a Viking theme."
+    },
+    {
+        "product_id": 115,
+        "supplier_id": 1,
+        "rationale": "A classic, highly regarded worker-placement Eurogame."
+    },
+    {
+        "product_id": 116,
+        "supplier_id": 1,
+        "rationale": "A racing and hand-management game with a unique theme."
+    },
+    {
+        "product_id": 117,
+        "supplier_id": 3,
+        "rationale": "A popular party game of trivia and betting."
+    },
+    {
+        "product_id": 118,
+        "supplier_id": 4,
+        "rationale": "A light abstract game of tile-laying and route-building."
+    },
+    {
+        "product_id": 119,
+        "supplier_id": 1,
+        "rationale": "A classic, highly strategic tile-laying game from Reiner Knizia."
+    },
+    {
+        "product_id": 120,
+        "supplier_id": 3,
+        "rationale": "A fast-paced social deduction and bluffing party game."
+    },
+    {
+        "product_id": 121,
+        "supplier_id": 2,
+        "rationale": "A classic 4X (eXplore, eXpand, eXploit, eXterminate) space epic game."
+    },
+    {
+        "product_id": 122,
+        "supplier_id": 1,
+        "rationale": "A complex and strategic Eurogame that builds on the mechanics of Terra Mystica."
+    },
+    {
+        "product_id": 123,
+        "supplier_id": 3,
+        "rationale": "A simple and quick card game of bidding and avoiding cards."
+    },
+    {
+        "product_id": 124,
+        "supplier_id": 4,
+        "rationale": "A classic abstract strategy game of placing polyominoes."
+    },
+    {
+        "product_id": 125,
+        "supplier_id": 2,
+        "rationale": "A narrative-driven, cooperative game with a time-travel puzzle theme."
+    },
+    {
+        "product_id": 126,
+        "supplier_id": 1,
+        "rationale": "A deck-building race game with light strategy."
+    },
+    {
+        "product_id": 127,
+        "supplier_id": 2,
+        "rationale": "A semi-cooperative game with a traitor mechanic and strong thematic elements."
+    },
+    {
+        "product_id": 128,
+        "supplier_id": 3,
+        "rationale": "A light and chaotic family-friendly betting and racing game."
+    },
+    {
+        "product_id": 129,
+        "supplier_id": 1,
+        "rationale": "A classic auction and set-collection Eurogame."
+    },
+    {
+        "product_id": 130,
+        "supplier_id": 3,
+        "rationale": "A humorous card game where players build decks of creature factions to fight."
+    },
+    {
+        "product_id": 131,
+        "supplier_id": 1,
+        "rationale": "An engine-building game focused on a set collection of park cards."
+    },
+    {
+        "product_id": 132,
+        "supplier_id": 1,
+        "rationale": "A zen-like set-collection game with a unique movement mechanic."
+    },
+    {
+        "product_id": 133,
+        "supplier_id": 2,
+        "rationale": "A cutthroat game of survival and escape with a modular board."
+    },
+    {
+        "product_id": 134,
+        "supplier_id": 1,
+        "rationale": "A tile-laying game where one player acts as a price-setting Master Builder."
+    },
+    {
+        "product_id": 135,
+        "supplier_id": 1,
+        "rationale": "A fast and streamlined engine-building game of trading spices."
+    },
+    {
+        "product_id": 136,
+        "supplier_id": 1,
+        "rationale": "A tile-laying Eurogame with a unique bidding and pricing mechanic."
+    },
+    {
+        "product_id": 137,
+        "supplier_id": 1,
+        "rationale": "A highly-rated economic Eurogame with deep strategy and multiple paths to victory."
+    },
+    {
+        "product_id": 138,
+        "supplier_id": 1,
+        "rationale": "A city-building Eurogame with tile-laying and economic management."
+    },
+    {
+        "product_id": 139,
+        "supplier_id": 2,
+        "rationale": "A cooperative dice game with a firefighting theme."
+    },
+    {
+        "product_id": 140,
+        "supplier_id": 4,
+        "rationale": "A clever roll-and-write dice game with combo-chaining opportunities."
+    },
+    {
+        "product_id": 141,
+        "supplier_id": 2,
+        "rationale": "A classic dungeon-crawl adventure game with one-vs-many gameplay."
+    },
+    {
+        "product_id": 142,
+        "supplier_id": 1,
+        "rationale": "A tactical game of card and dice drafting with a fantasy theme."
+    },
+    {
+        "product_id": 143,
+        "supplier_id": 1,
+        "rationale": "A dice-placement Eurogame focused on travel and fulfilling contracts."
+    },
+    {
+        "product_id": 144,
+        "supplier_id": 3,
+        "rationale": "A simple, pure bluffing and party game."
+    },
+    {
+        "product_id": 145,
+        "supplier_id": 2,
+        "rationale": "An epic and immersive game of galactic conquest and diplomacy."
+    },
+    {
+        "product_id": 146,
+        "supplier_id": 2,
+        "rationale": "A tactical ship-to-ship combat miniatures game."
+    },
+    {
+        "product_id": 147,
+        "supplier_id": 3,
+        "rationale": "A dice-based version of the popular party game BANG!"
+    },
+    {
+        "product_id": 148,
+        "supplier_id": 2,
+        "rationale": "A thematic, campaign-driven tactical combat game set in the Star Wars universe."
+    },
+    {
+        "product_id": 149,
+        "supplier_id": 2,
+        "rationale": "A cooperative deck-building card game where players embody Marvel heroes."
+    },
+    {
+        "product_id": 150,
+        "supplier_id": 1,
+        "rationale": "A worker placement game with a Viking theme and raiding mechanics."
+    },
+    {
+        "product_id": 151,
+        "supplier_id": 1,
+        "rationale": "A card-driven engine-building game of civilization."
+    },
+    {
+        "product_id": 152,
+        "supplier_id": 1,
+        "rationale": "A strategic worker-placement game focused on managing a trading post."
+    },
+    {
+        "product_id": 153,
+        "supplier_id": 2,
+        "rationale": "A cooperative fire rescue game with tactical decisions."
+    },
+    {
+        "product_id": 154,
+        "supplier_id": 4,
+        "rationale": "An abstract strategy game with a nature theme and tile-laying mechanics."
+    },
+    {
+        "product_id": 155,
+        "supplier_id": 2,
+        "rationale": "A cooperative adventure game set in the Lord of the Rings universe."
+    },
+    {
+        "product_id": 156,
+        "supplier_id": 4,
+        "rationale": "A cooperative party game focused on deduction and word association."
+    },
+    {
+        "product_id": 157,
+        "supplier_id": 3,
+        "rationale": "A popular party game of deception, deduction, and wordplay."
+    },
+    {
+        "product_id": 158,
+        "supplier_id": 3,
+        "rationale": "A programming and racing game with chaotic, fun interactions."
+    },
+    {
+        "product_id": 159,
+        "supplier_id": 1,
+        "rationale": "A dice-driven Eurogame with a focus on medieval economics."
+    },
+    {
+        "product_id": 160,
+        "supplier_id": 1,
+        "rationale": "A classic card game version of the board game Puerto Rico."
+    },
+    {
+        "product_id": 161,
+        "supplier_id": 4,
+        "rationale": "An abstract strategy game with simple rules and high replayability."
+    },
+    {
+        "product_id": 162,
+        "supplier_id": 1,
+        "rationale": "A worker-placement Eurogame with a unique time-as-a-resource mechanic."
+    },
+    {
+        "product_id": 163,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame with auction and worker placement mechanics."
+    },
+    {
+        "product_id": 164,
+        "supplier_id": 3,
+        "rationale": "A party game focused on deduction and secret identities."
+    },
+    {
+        "product_id": 165,
+        "supplier_id": 3,
+        "rationale": "A bluffing and deduction party game set in Hong Kong."
+    },
+    {
+        "product_id": 166,
+        "supplier_id": 2,
+        "rationale": "An app-driven cooperative crime investigation and deduction game."
+    },
+    {
+        "product_id": 167,
+        "supplier_id": 1,
+        "rationale": "A complex deduction Eurogame with worker placement and an app."
+    },
+    {
+        "product_id": 168,
+        "supplier_id": 1,
+        "rationale": "A classic auction and economic Eurogame."
+    },
+    {
+        "product_id": 169,
+        "supplier_id": 1,
+        "rationale": "A strategic card game focused on engine-building and combos."
+    },
+    {
+        "product_id": 170,
+        "supplier_id": 4,
+        "rationale": "A two-player abstract strategy game with a chess-like feel."
+    },
+    {
+        "product_id": 171,
+        "supplier_id": 4,
+        "rationale": "A puzzly tile-laying game with a cat and quilt theme."
+    },
+    {
+        "product_id": 172,
+        "supplier_id": 1,
+        "rationale": "A dice-crafting game with an innovative mechanic of building your own dice."
+    },
+    {
+        "product_id": 173,
+        "supplier_id": 1,
+        "rationale": "A cooperative deck-building game set in the Marvel universe."
+    },
+    {
+        "product_id": 174,
+        "supplier_id": 2,
+        "rationale": "A massive cooperative exploration and adventure game with legacy elements."
+    },
+    {
+        "product_id": 175,
+        "supplier_id": 2,
+        "rationale": "A cooperative board game set in a fantasy world with a strong narrative."
+    },
+    {
+        "product_id": 176,
+        "supplier_id": 3,
+        "rationale": "A cooperative, real-time game with a unique theme of maze exploration."
+    },
+    {
+        "product_id": 177,
+        "supplier_id": 3,
+        "rationale": "A push-your-luck party game of exploration and treasure hunting."
+    },
+    {
+        "product_id": 178,
+        "supplier_id": 1,
+        "rationale": "A dice-drafting Eurogame with a hotel management theme."
+    },
+    {
+        "product_id": 179,
+        "supplier_id": 3,
+        "rationale": "A real-time cooperative game of team-based submarine combat."
+    },
+    {
+        "product_id": 180,
+        "supplier_id": 2,
+        "rationale": "A mythological wargame with auction and area control mechanics."
+    },
+    {
+        "product_id": 181,
+        "supplier_id": 4,
+        "rationale": "A solo-focused deck-building game of survival."
+    },
+    {
+        "product_id": 182,
+        "supplier_id": 2,
+        "rationale": "A thematic game of negotiation, diplomacy, and conquest in feudal Japan."
+    },
+    {
+        "product_id": 183,
+        "supplier_id": 4,
+        "rationale": "A light and quick abstract strategy game."
+    },
+    {
+        "product_id": 184,
+        "supplier_id": 2,
+        "rationale": "A classic cooperative deduction game based on the Sherlock Holmes novels."
+    },
+    {
+        "product_id": 185,
+        "supplier_id": 2,
+        "rationale": "A cooperative deck-building game with a fantasy theme and innovative mechanics."
+    },
+    {
+        "product_id": 186,
+        "supplier_id": 3,
+        "rationale": "A simple and elegant set-collection card game."
+    },
+    {
+        "product_id": 187,
+        "supplier_id": 3,
+        "rationale": "A party game of bluffing and deduction with a spy theme."
+    },
+    {
+        "product_id": 188,
+        "supplier_id": 3,
+        "rationale": "A light and humorous card game with a unique theme."
+    },
+    {
+        "product_id": 189,
+        "supplier_id": 3,
+        "rationale": "A party game that expands on the base Dixit game with more cards and players."
+    },
+    {
+        "product_id": 190,
+        "supplier_id": 4,
+        "rationale": "A strategic card game of set collection and path building."
+    },
+    {
+        "product_id": 191,
+        "supplier_id": 2,
+        "rationale": "A heavy, complex wargame with civilization-building elements."
+    },
+    {
+        "product_id": 192,
+        "supplier_id": 2,
+        "rationale": "A cooperative game where players fight off ghosts to protect a village."
+    },
+    {
+        "product_id": 193,
+        "supplier_id": 3,
+        "rationale": "The classic deduction and murder mystery board game."
+    },
+    {
+        "product_id": 194,
+        "supplier_id": 1,
+        "rationale": "A civilization-building game with a unique track-based advancement system."
+    },
+    {
+        "product_id": 195,
+        "supplier_id": 2,
+        "rationale": "A complex, thematic game of control and conflict in feudal Japan."
+    },
+    {
+        "product_id": 196,
+        "supplier_id": 1,
+        "rationale": "A compact and strategic dice game of galactic expansion."
+    },
+    {
+        "product_id": 197,
+        "supplier_id": 1,
+        "rationale": "A heavy strategy game about building and managing a fast-food chain."
+    },
+    {
+        "product_id": 198,
+        "supplier_id": 1,
+        "rationale": "A dice-drafting game where players create and equip fantasy characters."
+    },
+    {
+        "product_id": 199,
+        "supplier_id": 2,
+        "rationale": "A thematic game where players take on the roles of iconic Disney villains."
+    },
+    {
+        "product_id": 200,
+        "supplier_id": 1,
+        "rationale": "A mid-to-heavy economic game with clan-based abilities and modular board."
+    },
+    {
+        "product_id": 201,
+        "supplier_id": 1,
+        "rationale": "A classic strategic game of acquiring businesses and investing."
+    },
+    {
+        "product_id": 202,
+        "supplier_id": 3,
+        "rationale": "A light and fast-paced pirate-themed racing game."
+    },
+    {
+        "product_id": 203,
+        "supplier_id": 3,
+        "rationale": "A party game of deduction and creative thinking through icon association."
+    },
+    {
+        "product_id": 204,
+        "supplier_id": 4,
+        "rationale": "An abstract game of matching shapes and colors."
+    },
+    {
+        "product_id": 205,
+        "supplier_id": 1,
+        "rationale": "A complex Eurogame about building a livable underwater civilization."
+    },
+    {
+        "product_id": 206,
+        "supplier_id": 1,
+        "rationale": "A classic exploration and territory-building game."
+    },
+    {
+        "product_id": 207,
+        "supplier_id": 3,
+        "rationale": "A fast and fun card drafting game with a vegetable theme."
+    },
+    {
+        "product_id": 208,
+        "supplier_id": 1,
+        "rationale": "A complex worker-placement Eurogame with a unique dice-as-workers mechanic."
+    },
+    {
+        "product_id": 209,
+        "supplier_id": 1,
+        "rationale": "An engine-building game with a dice-rolling mechanic and player interaction."
+    },
+    {
+        "product_id": 210,
+        "supplier_id": 4,
+        "rationale": "A puzzly tile-laying game with a cat and quilt theme."
+    },
+    {
+        "product_id": 211,
+        "supplier_id": 1,
+        "rationale": "An engine-building card drafting game with a sci-fi theme."
+    },
+    {
+        "product_id": 212,
+        "supplier_id": 3,
+        "rationale": "A light-hearted puzzle game of collecting and brewing potions."
+    },
+    {
+        "product_id": 213,
+        "supplier_id": 4,
+        "rationale": "An abstract city-building game with puzzle elements."
+    },
+    {
+        "product_id": 214,
+        "supplier_id": 1,
+        "rationale": "A classic route-building Eurogame with set collection."
+    },
+    {
+        "product_id": 215,
+        "supplier_id": 2,
+        "rationale": "A cooperative deck-building game set in the Harry Potter universe."
+    },
+    {
+        "product_id": 216,
+        "supplier_id": 1,
+        "rationale": "A cooperative trick-taking game with a unique mission-based structure."
+    },
+    {
+        "product_id": 217,
+        "supplier_id": 3,
+        "rationale": "A simple and fast pattern recognition party game."
+    },
+    {
+        "product_id": 218,
+        "supplier_id": 3,
+        "rationale": "A high-stakes Formula One racing game with dice rolling."
+    },
+    {
+        "product_id": 219,
+        "supplier_id": 2,
+        "rationale": "A cooperative adventure game with a rich story and interactive environment."
+    },
+    {
+        "product_id": 220,
+        "supplier_id": 4,
+        "rationale": "A ladder-climbing card game with unique hand management rules."
+    },
+    {
+        "product_id": 221,
+        "supplier_id": 1,
+        "rationale": "A dice-driven city-building and fantasy game."
+    },
+    {
+        "product_id": 222,
+        "supplier_id": 2,
+        "rationale": "A cooperative adventure game with a strong narrative and quest-based gameplay."
+    },
+    {
+        "product_id": 223,
+        "supplier_id": 4,
+        "rationale": "A classic abstract strategy game of forming sets and runs with tiles."
+    },
+    {
+        "product_id": 224,
+        "supplier_id": 4,
+        "rationale": "A tile-laying puzzle game with an animal park theme."
+    },
+    {
+        "product_id": 225,
+        "supplier_id": 2,
+        "rationale": "A complex cooperative adventure game with a strong narrative and survival elements."
+    },
+    {
+        "product_id": 226,
+        "supplier_id": 1,
+        "rationale": "The original version of the classic civilization-building game."
+    },
+    {
+        "product_id": 227,
+        "supplier_id": 4,
+        "rationale": "A classic push-your-luck dice game."
+    },
+    {
+        "product_id": 228,
+        "supplier_id": 2,
+        "rationale": "An area control and combat game with mythological themes."
+    },
+    {
+        "product_id": 229,
+        "supplier_id": 3,
+        "rationale": "A classic party game of word association and clues."
+    },
+    {
+        "product_id": 230,
+        "supplier_id": 4,
+        "rationale": "A beautiful and strategic two-player card game of set collection."
+    },
+    {
+        "product_id": 231,
+        "supplier_id": 2,
+        "rationale": "A classic game of galactic conquest with diplomacy and warfare."
+    },
+    {
+        "product_id": 232,
+        "supplier_id": 2,
+        "rationale": "A cooperative zombie survival game with modular board and scenarios."
+    },
+    {
+        "product_id": 233,
+        "supplier_id": 3,
+        "rationale": "A hilarious party game of drawing and guessing, like a visual game of telephone."
+    },
+    {
+        "product_id": 234,
+        "supplier_id": 1,
+        "rationale": "A heavy Eurogame of resource management and dam-building with innovative mechanics."
+    },
+    {
+        "product_id": 235,
+        "supplier_id": 4,
+        "rationale": "A traditional dexterity game of flicking discs on a circular board."
+    },
+    {
+        "product_id": 236,
+        "supplier_id": 1,
+        "rationale": "A complex and chaotic civilization-building card game."
+    },
+    {
+        "product_id": 237,
+        "supplier_id": 1,
+        "rationale": "A modern edition of a classic Eurogame with streamlined rules."
+    },
+    {
+        "product_id": 238,
+        "supplier_id": 2,
+        "rationale": "A fantasy deck-building game with combat and character classes."
+    },
+    {
+        "product_id": 239,
+        "supplier_id": 1,
+        "rationale": "A strategic worker-placement game set in the West Kingdom."
+    },
+    {
+        "product_id": 240,
+        "supplier_id": 3,
+        "rationale": "A light and fast push-your-luck dice game with a zombie theme."
+    },
+    {
+        "product_id": 241,
+        "supplier_id": 1,
+        "rationale": "A strategic engine-building game of terraforming Mars."
+    },
+    {
+        "product_id": 242,
+        "supplier_id": 1,
+        "rationale": "A tactical bicycle racing game with card management."
+    },
+    {
+        "product_id": 243,
+        "supplier_id": 4,
+        "rationale": "A two-player deduction and bluffing game."
+    },
+    {
+        "product_id": 244,
+        "supplier_id": 3,
+        "rationale": "A quick and light press-your-luck dice game."
+    },
+    {
+        "product_id": 245,
+        "supplier_id": 1,
+        "rationale": "A deep and strategic worker-placement game set in imperial China."
+    },
+    {
+        "product_id": 246,
+        "supplier_id": 3,
+        "rationale": "A classic party card game of ever-changing rules."
+    },
+    {
+        "product_id": 247,
+        "supplier_id": 1,
+        "rationale": "A press-your-luck card game with a pirate theme."
+    },
+    {
+        "product_id": 248,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame with a unique Mancala-like action selection."
+    },
+    {
+        "product_id": 249,
+        "supplier_id": 1,
+        "rationale": "A classic worker-placement Eurogame based on a bestselling novel."
+    },
+    {
+        "product_id": 250,
+        "supplier_id": 2,
+        "rationale": "A dice-driven worker placement game with a Viking theme."
+    },
+    {
+        "product_id": 251,
+        "supplier_id": 1,
+        "rationale": "A light auction and set-collection game with a monastery theme."
+    },
+    {
+        "product_id": 252,
+        "supplier_id": 2,
+        "rationale": "A cooperative game of fending off iconic movie monsters."
+    },
+    {
+        "product_id": 253,
+        "supplier_id": 2,
+        "rationale": "A cooperative campaign game based on the League of Legends universe."
+    },
+    {
+        "product_id": 254,
+        "supplier_id": 4,
+        "rationale": "A classic two-player card game of forming poker-like hands."
+    },
+    {
+        "product_id": 255,
+        "supplier_id": 4,
+        "rationale": "A classic abstract strategy game of pure logic and territory control."
+    },
+    {
+        "product_id": 256,
+        "supplier_id": 4,
+        "rationale": "A clever tile-laying game with a unique scoring mechanic."
+    },
+    {
+        "product_id": 257,
+        "supplier_id": 3,
+        "rationale": "A humorous card game about building a dungeon to lure and defeat heroes."
+    },
+    {
+        "product_id": 258,
+        "supplier_id": 3,
+        "rationale": "A classic hidden movement and deduction game."
+    },
+    {
+        "product_id": 259,
+        "supplier_id": 2,
+        "rationale": "A legacy-style cooperative game set in the aftermath of a global plague."
+    },
+    {
+        "product_id": 260,
+        "supplier_id": 2,
+        "rationale": "A thematic game of species adaptation and survival."
+    },
+    {
+        "product_id": 261,
+        "supplier_id": 4,
+        "rationale": "A puzzly tile-laying game about making quilts and attracting cats."
+    },
+    {
+        "product_id": 262,
+        "supplier_id": 4,
+        "rationale": "A cooperative deduction game with a giant city map."
+    },
+    {
+        "product_id": 263,
+        "supplier_id": 1,
+        "rationale": "A complex strategy game of sailing, trading, and influencing nations in the Caribbean."
+    },
+    {
+        "product_id": 264,
+        "supplier_id": 3,
+        "rationale": "A cooperative real-time dice-rolling game of escaping a cursed temple."
+    },
+    {
+        "product_id": 265,
+        "supplier_id": 2,
+        "rationale": "A cooperative, app-supported adventure game set in Tolkien's Middle-earth."
+    },
+    {
+        "product_id": 266,
+        "supplier_id": 3,
+        "rationale": "A standalone monster-battling game with dice-rolling and city destruction."
+    },
+    {
+        "product_id": 267,
+        "supplier_id": 1,
+        "rationale": "A thematic engine-building game focused on creating a balanced habitat."
+    },
+    {
+        "product_id": 268,
+        "supplier_id": 4,
+        "rationale": "A classic wargame of bluffing and hidden information."
+    },
+    {
+        "product_id": 269,
+        "supplier_id": 4,
+        "rationale": "A trick-taking card game where players must win specific numbers of tricks."
+    },
+    {
+        "product_id": 270,
+        "supplier_id": 2,
+        "rationale": "A cooperative game of survival against zombies in a medieval fantasy setting."
+    },
+    {
+        "product_id": 271,
+        "supplier_id": 3,
+        "rationale": "A cooperative game of defending a castle from a monster horde."
+    },
+    {
+        "product_id": 272,
+        "supplier_id": 4,
+        "rationale": "A classic abstract strategy tile-laying game from Reiner Knizia."
+    },
+    {
+        "product_id": 273,
+        "supplier_id": 3,
+        "rationale": "A light and fun dexterity game of flicking discs."
+    },
+    {
+        "product_id": 274,
+        "supplier_id": 3,
+        "rationale": "A light bidding and set collection card game."
+    },
+    {
+        "product_id": 275,
+        "supplier_id": 1,
+        "rationale": "A storytelling and town-building game with a unique paragraph book mechanic."
+    },
+    {
+        "product_id": 276,
+        "supplier_id": 2,
+        "rationale": "A thematic engine-building game of creating a dinosaur theme park."
+    },
+    {
+        "product_id": 277,
+        "supplier_id": 2,
+        "rationale": "A hidden movement and deduction game where one player is Jack the Ripper."
+    },
+    {
+        "product_id": 278,
+        "supplier_id": 1,
+        "rationale": "A combo-centric card game of building a fantasy realm."
+    },
+    {
+        "product_id": 279,
+        "supplier_id": 2,
+        "rationale": "A cooperative, real-time game of surviving on a spaceship."
+    },
+    {
+        "product_id": 280,
+        "supplier_id": 3,
+        "rationale": "A classic dice-rolling game where players try to score in various categories."
+    },
+    {
+        "product_id": 281,
+        "supplier_id": 1,
+        "rationale": "A classic Eurogame about building Saint Petersburg through card acquisition."
+    },
+    {
+        "product_id": 282,
+        "supplier_id": 1,
+        "rationale": "A cooperative two-player game about landing an airplane."
+    },
+    {
+        "product_id": 283,
+        "supplier_id": 2,
+        "rationale": "A cooperative card game where players are superheroes fighting villains."
+    },
+    {
+        "product_id": 284,
+        "supplier_id": 1,
+        "rationale": "A highly interactive Eurogame of trade and network-building."
+    },
+    {
+        "product_id": 285,
+        "supplier_id": 1,
+        "rationale": "A tile-placement game about building ancient Egyptian monuments."
+    },
+    {
+        "product_id": 286,
+        "supplier_id": 3,
+        "rationale": "A classic dexterity party game of building and deconstructing a tower."
+    },
+    {
+        "product_id": 287,
+        "supplier_id": 1,
+        "rationale": "A civilization-building board game based on the famous video game series."
+    },
+    {
+        "product_id": 288,
+        "supplier_id": 3,
+        "rationale": "A unique card game where the goal is to make your characters as miserable as possible."
+    },
+    {
+        "product_id": 289,
+        "supplier_id": 4,
+        "rationale": "A classic partnership trick-taking card game."
+    },
+    {
+        "product_id": 290,
+        "supplier_id": 2,
+        "rationale": "A cooperative adventure game based on the iconic Lord of the Rings trilogy."
+    },
+    {
+        "product_id": 291,
+        "supplier_id": 1,
+        "rationale": "A strategic race game of exploration and resource management."
+    },
+    {
+        "product_id": 292,
+        "supplier_id": 3,
+        "rationale": "A party game of bluffing and player elimination with foam guns."
+    },
+    {
+        "product_id": 293,
+        "supplier_id": 2,
+        "rationale": "An asymmetric area-control game where players are chaos gods."
+    },
+    {
+        "product_id": 294,
+        "supplier_id": 2,
+        "rationale": "A thematic adventure board game set in the Warhammer fantasy universe."
+    },
+    {
+        "product_id": 295,
+        "supplier_id": 1,
+        "rationale": "A deep and strategic civilization-building game with a technology tree."
+    },
+    {
+        "product_id": 296,
+        "supplier_id": 1,
+        "rationale": "A strategic auction and resource management game from Richard Ulrich."
+    },
+    {
+        "product_id": 297,
+        "supplier_id": 3,
+        "rationale": "A public domain dice game of bluffing and deduction."
+    },
+    {
+        "product_id": 298,
+        "supplier_id": 3,
+        "rationale": "A trivia party game where betting on others' guesses is key."
+    },
+    {
+        "product_id": 299,
+        "supplier_id": 1,
+        "rationale": "A game of development, combination, and collection with an underwater theme."
+    },
+    {
+        "product_id": 300,
+        "supplier_id": 4,
+        "rationale": "A unique deduction game where players hunt for a hidden creature."
+    },
+    {
+        "product_id": 301,
+        "supplier_id": 3,
+        "rationale": "A family game of collecting animals for a zoo."
+    },
+    {
+        "product_id": 302,
+        "supplier_id": 1,
+        "rationale": "A dice-based worker placement and area control game with a sci-fi theme."
+    },
+    {
+        "product_id": 303,
+        "supplier_id": 2,
+        "rationale": "A classic zombie survival game with modular tiles."
+    },
+    {
+        "product_id": 304,
+        "supplier_id": 1,
+        "rationale": "An engine-building Eurogame with dice drafting and tavern management."
+    },
+    {
+        "product_id": 305,
+        "supplier_id": 1,
+        "rationale": "A deep, complex historical strategy game focused on politics and influence."
+    },
+    {
+        "product_id": 306,
+        "supplier_id": 4,
+        "rationale": "A highly tactical and abstract wargame."
+    },
+    {
+        "product_id": 307,
+        "supplier_id": 1,
+        "rationale": "A heavy economic strategy game about managing a international art gallery."
+    },
+    {
+        "product_id": 308,
+        "supplier_id": 3,
+        "rationale": "A modern edition of the classic role-selection and bluffing game."
+    },
+    {
+        "product_id": 309,
+        "supplier_id": 1,
+        "rationale": "A complex worker-placement game about raising and selling magical pets."
+    },
+    {
+        "product_id": 310,
+        "supplier_id": 3,
+        "rationale": "A social guessing party game about reading your teammates' minds."
+    },
+    {
+        "product_id": 311,
+        "supplier_id": 3,
+        "rationale": "A quick and light drafting game of building a dinosaur park."
+    },
+    {
+        "product_id": 312,
+        "supplier_id": 2,
+        "rationale": "A sci-fi themed deck-building adventure game, a sequel to Clank!"
+    },
+    {
+        "product_id": 313,
+        "supplier_id": 2,
+        "rationale": "A cooperative card game about survival during World War I."
+    },
+    {
+        "product_id": 314,
+        "supplier_id": 4,
+        "rationale": "A classic abstract strategy game of creating caravans and controlling oases."
+    },
+    {
+        "product_id": 315,
+        "supplier_id": 2,
+        "rationale": "A hidden movement and deduction game of hunting Dracula across Europe."
+    },
+    {
+        "product_id": 316,
+        "supplier_id": 2,
+        "rationale": "A competitive legacy game of building and populating a village."
+    },
+    {
+        "product_id": 317,
+        "supplier_id": 2,
+        "rationale": "An upgraded, streamlined version of the classic 4X space opera game."
+    },
+    {
+        "product_id": 318,
+        "supplier_id": 1,
+        "rationale": "A dice-placement and worker-placement Eurogame with an Indian theme."
+    },
+    {
+        "product_id": 319,
+        "supplier_id": 2,
+        "rationale": "A highly complex and thematic dice-builder RPG."
+    },
+    {
+        "product_id": 320,
+        "supplier_id": 3,
+        "rationale": "A classic bidding and auction card game."
+    },
+    {
+        "product_id": 321,
+        "supplier_id": 3,
+        "rationale": "A family-friendly game of navigating a shifting maze."
+    },
+    {
+        "product_id": 322,
+        "supplier_id": 3,
+        "rationale": "A push-your-luck dungeon delve with bluffing elements."
+    },
+    {
+        "product_id": 323,
+        "supplier_id": 3,
+        "rationale": "A revised edition of the chaotic camel racing and betting game."
+    },
+    {
+        "product_id": 324,
+        "supplier_id": 3,
+        "rationale": "A classic bluffing game where players try to force opponents to collect critters."
+    },
+    {
+        "product_id": 325,
+        "supplier_id": 1,
+        "rationale": "A bidding and drafting game with set collection mechanics."
+    },
+    {
+        "product_id": 326,
+        "supplier_id": 1,
+        "rationale": "A two-player version of the classic Eurogame Agricola, focused on animals."
+    },
+    {
+        "product_id": 327,
+        "supplier_id": 1,
+        "rationale": "A standalone two-player version of the popular game Splendor."
+    },
+    {
+        "product_id": 328,
+        "supplier_id": 1,
+        "rationale": "A complex and heavy card game with a unique multi-use card system."
+    },
+    {
+        "product_id": 329,
+        "supplier_id": 4,
+        "rationale": "A classic abstract strategy game dating back thousands of years."
+    },
+    {
+        "product_id": 330,
+        "supplier_id": 1,
+        "rationale": "A route-building game designed for 2-3 players with a focus on blocking."
+    },
+    {
+        "product_id": 331,
+        "supplier_id": 2,
+        "rationale": "A sandbox-style game of piracy, trade, and adventure in the Caribbean."
+    },
+    {
+        "product_id": 332,
+        "supplier_id": 3,
+        "rationale": "A card game of bluffing and timing with a pirate theme."
+    },
+    {
+        "product_id": 333,
+        "supplier_id": 1,
+        "rationale": "A complex Eurogame about managing a Victorian estate, with deck-building and worker placement."
+    },
+    {
+        "product_id": 334,
+        "supplier_id": 3,
+        "rationale": "A card-driven bidding, racing, and betting game."
+    },
+    {
+        "product_id": 335,
+        "supplier_id": 1,
+        "rationale": "A dice-drafting Eurogame with a Renaissance theme."
+    },
+    {
+        "product_id": 336,
+        "supplier_id": 3,
+        "rationale": "A rummy-type card game where players complete ten phases."
+    },
+    {
+        "product_id": 337,
+        "supplier_id": 2,
+        "rationale": "An area control wargame set in feudal Japan."
+    },
+    {
+        "product_id": 338,
+        "supplier_id": 2,
+        "rationale": "A classic Dungeons & Dragons-style adventure game."
+    },
+    {
+        "product_id": 339,
+        "supplier_id": 4,
+        "rationale": "A quick-playing roll-and-write dice game."
+    },
+    {
+        "product_id": 340,
+        "supplier_id": 2,
+        "rationale": "A survival horror board game with a zombie theme."
+    },
+    {
+        "product_id": 341,
+        "supplier_id": 1,
+        "rationale": "A worker-placement Eurogame about building a dungeon."
+    },
+    {
+        "product_id": 342,
+        "supplier_id": 2,
+        "rationale": "A cooperative game set in the Cthulhu mythos, focused on fighting Elder Gods."
+    },
+    {
+        "product_id": 343,
+        "supplier_id": 4,
+        "rationale": "An abstract strategy game with a stained glass theme."
+    },
+    {
+        "product_id": 344,
+        "supplier_id": 3,
+        "rationale": "A dice-pool building game with fantasy combat."
+    },
+    {
+        "product_id": 345,
+        "supplier_id": 2,
+        "rationale": "An area control and influence game with a fantasy theme."
+    },
+    {
+        "product_id": 346,
+        "supplier_id": 1,
+        "rationale": "A two-player version of Agricola focused on animal husbandry."
+    },
+    {
+        "product_id": 347,
+        "supplier_id": 1,
+        "rationale": "A two-player standalone game based on Splendor with added complexity."
+    },
+    {
+        "product_id": 348,
+        "supplier_id": 2,
+        "rationale": "A thematic horror game of exploration and mystery."
+    },
+    {
+        "product_id": 349,
+        "supplier_id": 3,
+        "rationale": "A classic speed and pattern-recognition party game."
+    },
+    {
+        "product_id": 350,
+        "supplier_id": 1,
+        "rationale": "A deck-building game with a fantasy theme."
+    },
+    {
+        "product_id": 351,
+        "supplier_id": 2,
+        "rationale": "A cooperative adventure game with a strong narrative and exploration focus."
+    },
+    {
+        "product_id": 352,
+        "supplier_id": 4,
+        "rationale": "A roll-and-write puzzle game with route-building."
+    },
+    {
+        "product_id": 353,
+        "supplier_id": 2,
+        "rationale": "A tabletop adaptation of the video game about civilian survival in a war-torn city."
+    },
+    {
+        "product_id": 354,
+        "supplier_id": 1,
+        "rationale": "A card drafting and area control game with a light-hearted rabbit theme."
+    },
+    {
+        "product_id": 355,
+        "supplier_id": 4,
+        "rationale": "A visually appealing set collection game about creating paintings."
+    },
+    {
+        "product_id": 356,
+        "supplier_id": 1,
+        "rationale": "A deduction and logic puzzle game about finding a hidden planet."
+    },
+    {
+        "product_id": 357,
+        "supplier_id": 2,
+        "rationale": "A classic game of negotiation and betrayal with no element of luck."
+    },
+    {
+        "product_id": 358,
+        "supplier_id": 2,
+        "rationale": "A cooperative card game of survival against alien hordes."
+    },
+    {
+        "product_id": 359,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame with card drafting and influence mechanics."
+    },
+    {
+        "product_id": 360,
+        "supplier_id": 3,
+        "rationale": "A classic family game simulating life events."
+    },
+    {
+        "product_id": 361,
+        "supplier_id": 1,
+        "rationale": "A heavy economic Eurogame with hand management and multiple paths to victory."
+    },
+    {
+        "product_id": 362,
+        "supplier_id": 4,
+        "rationale": "A light set-collection card game with a push-your-luck element."
+    },
+    {
+        "product_id": 363,
+        "supplier_id": 1,
+        "rationale": "An engine-building Eurogame with an industrial revolution theme."
+    },
+    {
+        "product_id": 364,
+        "supplier_id": 2,
+        "rationale": "An epic, story-driven cooperative exploration game."
+    },
+    {
+        "product_id": 365,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame with dice placement and a rondel mechanic."
+    },
+    {
+        "product_id": 366,
+        "supplier_id": 2,
+        "rationale": "A complex and heavy strategy game about colonizing Mars."
+    },
+    {
+        "product_id": 367,
+        "supplier_id": 2,
+        "rationale": "A thematic sandbox adventure game set in the Star Wars universe."
+    },
+    {
+        "product_id": 368,
+        "supplier_id": 4,
+        "rationale": "A classic real-time pattern recognition puzzle game."
+    },
+    {
+        "product_id": 369,
+        "supplier_id": 2,
+        "rationale": "A cooperative deck-building game based on the Alien movie franchise."
+    },
+    {
+        "product_id": 370,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame focused on resource management and painting a fresco."
+    },
+    {
+        "product_id": 371,
+        "supplier_id": 3,
+        "rationale": "A classic word-based party game of giving clues while avoiding forbidden words."
+    },
+    {
+        "product_id": 372,
+        "supplier_id": 1,
+        "rationale": "A standalone game in the Carcassonne series with a Stone Age theme."
+    },
+    {
+        "product_id": 373,
+        "supplier_id": 1,
+        "rationale": "A tile-laying game with a city-building theme and resource management."
+    },
+    {
+        "product_id": 374,
+        "supplier_id": 1,
+        "rationale": "An engine-building card game with a multi-use card system."
+    },
+    {
+        "product_id": 375,
+        "supplier_id": 2,
+        "rationale": "A cooperative fantasy adventure game with a deep, branching storyline."
+    },
+    {
+        "product_id": 376,
+        "supplier_id": 1,
+        "rationale": "A re-themed, more fantastical version of Century: Spice Road."
+    },
+    {
+        "product_id": 377,
+        "supplier_id": 2,
+        "rationale": "A storytelling adventure game based on the tales of the Arabian Nights."
+    },
+    {
+        "product_id": 378,
+        "supplier_id": 2,
+        "rationale": "A cooperative, campaign-based card game set in the Pathfinder RPG universe."
+    },
+    {
+        "product_id": 379,
+        "supplier_id": 4,
+        "rationale": "A two-player card game of political intrigue and historical events."
+    },
+    {
+        "product_id": 380,
+        "supplier_id": 2,
+        "rationale": "A deck-building wargame simulating tactical combat in WWII."
+    },
+    {
+        "product_id": 381,
+        "supplier_id": 1,
+        "rationale": "A resource management Eurogame about building the Himeji Castle."
+    },
+    {
+        "product_id": 382,
+        "supplier_id": 4,
+        "rationale": "A cooperative card game where players must discard cards in numerical order."
+    },
+    {
+        "product_id": 383,
+        "supplier_id": 1,
+        "rationale": "A complex civilization-building game with card drafting."
+    },
+    {
+        "product_id": 384,
+        "supplier_id": 1,
+        "rationale": "A route-building and economic game with a focus on resource management."
+    },
+    {
+        "product_id": 385,
+        "supplier_id": 3,
+        "rationale": "A simple and fun real-time word game using letter tiles."
+    },
+    {
+        "product_id": 386,
+        "supplier_id": 1,
+        "rationale": "An adventure game of exploration and treasure hunting with a modular board."
+    },
+    {
+        "product_id": 387,
+        "supplier_id": 1,
+        "rationale": "A classic train game of building railroads and delivering goods."
+    },
+    {
+        "product_id": 388,
+        "supplier_id": 4,
+        "rationale": "A two-player tactical card game of forming poker-like formations."
+    },
+    {
+        "product_id": 389,
+        "supplier_id": 1,
+        "rationale": "A highly strategic dice-drafting and area control Eurogame."
+    },
+    {
+        "product_id": 390,
+        "supplier_id": 1,
+        "rationale": "A challenging Eurogame of resource management and careful planning."
+    },
+    {
+        "product_id": 391,
+        "supplier_id": 2,
+        "rationale": "A solo game with a multi-mission campaign against alien invaders."
+    },
+    {
+        "product_id": 392,
+        "supplier_id": 2,
+        "rationale": "A sandbox-style adventure game of piracy and trade in the Firefly universe."
+    },
+    {
+        "product_id": 393,
+        "supplier_id": 3,
+        "rationale": "A classic trick-taking card game with bidding."
+    },
+    {
+        "product_id": 394,
+        "supplier_id": 1,
+        "rationale": "A dice-rolling civilization-building game."
+    },
+    {
+        "product_id": 395,
+        "supplier_id": 1,
+        "rationale": "An innovative deck-building game with a card crafting system."
+    },
+    {
+        "product_id": 396,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame about glass-making in the Bavarian Forest."
+    },
+    {
+        "product_id": 397,
+        "supplier_id": 3,
+        "rationale": "A social deduction and bluffing game with hidden roles."
+    },
+    {
+        "product_id": 398,
+        "supplier_id": 4,
+        "rationale": "A dexterity game with a party focus, great for all ages."
+    },
+    {
+        "product_id": 399,
+        "supplier_id": 2,
+        "rationale": "A solo or cooperative dungeon crawl card game."
+    },
+    {
+        "product_id": 400,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame with card drafting and multi-use cards."
+    },
+    {
+        "product_id": 401,
+        "supplier_id": 2,
+        "rationale": "A cooperative heist game with a modular board."
+    },
+    {
+        "product_id": 402,
+        "supplier_id": 3,
+        "rationale": "A fast-paced card game version of the classic Monopoly."
+    },
+    {
+        "product_id": 403,
+        "supplier_id": 3,
+        "rationale": "A modern edition of the classic micro-game of deduction."
+    },
+    {
+        "product_id": 404,
+        "supplier_id": 2,
+        "rationale": "A thematic worker placement and resource management game."
+    },
+    {
+        "product_id": 405,
+        "supplier_id": 1,
+        "rationale": "A competitive legacy game where players build up a city over 24 episodes."
+    },
+    {
+        "product_id": 406,
+        "supplier_id": 2,
+        "rationale": "The original edition of the classic one-vs-many dungeon crawl game."
+    },
+    {
+        "product_id": 407,
+        "supplier_id": 2,
+        "rationale": "An open-world sandbox adventure game set in the American Wild West."
+    },
+    {
+        "product_id": 408,
+        "supplier_id": 3,
+        "rationale": "A classic trick-taking game with a pirate theme and bidding."
+    },
+    {
+        "product_id": 409,
+        "supplier_id": 2,
+        "rationale": "A highly thematic game of exploration and resource management with a sci-fi theme."
+    },
+    {
+        "product_id": 410,
+        "supplier_id": 1,
+        "rationale": "A classic pure negotiation game about building businesses in Chinatown."
+    },
+    {
+        "product_id": 411,
+        "supplier_id": 3,
+        "rationale": "A light and fast-paced push-your-luck dice game."
+    },
+    {
+        "product_id": 412,
+        "supplier_id": 1,
+        "rationale": "An engine-building game focused on creating an ecologically balanced habitat."
+    },
+    {
+        "product_id": 413,
+        "supplier_id": 1,
+        "rationale": "A strategic Eurogame with a unique time-track mechanic."
+    },
+    {
+        "product_id": 414,
+        "supplier_id": 1,
+        "rationale": "A classic, heavy economic game of building rail networks."
+    },
+    {
+        "product_id": 415,
+        "supplier_id": 2,
+        "rationale": "A cooperative puzzle and deduction game in the 'escape room' genre."
+    },
+    {
+        "product_id": 416,
+        "supplier_id": 1,
+        "rationale": "A quick engine-building Eurogame with an auction mechanic."
+    },
+    {
+        "product_id": 417,
+        "supplier_id": 2,
+        "rationale": "A cooperative game where players are Marvel heroes fighting a villain."
+    },
+    {
+        "product_id": 418,
+        "supplier_id": 1,
+        "rationale": "A deep and heavy economic strategy game about the reconstruction of Lisbon."
+    },
+    {
+        "product_id": 419,
+        "supplier_id": 4,
+        "rationale": "An abstract strategy game of tile-laying and pattern building."
+    },
+    {
+        "product_id": 420,
+        "supplier_id": 3,
+        "rationale": "A light and fast dexterity game for children and families."
+    },
+    {
+        "product_id": 421,
+        "supplier_id": 1,
+        "rationale": "A highly strategic game of resource management and trade."
+    },
+    {
+        "product_id": 422,
+        "supplier_id": 4,
+        "rationale": "A dexterity game with a unique box-in-a-box board design."
+    },
+    {
+        "product_id": 423,
+        "supplier_id": 2,
+        "rationale": "A card game based on the popular Blood Bowl universe with a sports theme."
+    },
+    {
+        "product_id": 424,
+        "supplier_id": 2,
+        "rationale": "A unique deck game where every deck is one-of-a-kind."
+    },
+    {
+        "product_id": 425,
+        "supplier_id": 1,
+        "rationale": "A heavy Euro-style strategy game about stage illusionists."
+    },
+    {
+        "product_id": 426,
+        "supplier_id": 1,
+        "rationale": "A complex solo or two-player game of farming in East Frisia."
+    },
+    {
+        "product_id": 427,
+        "supplier_id": 3,
+        "rationale": "A streamlined, family-friendly version of 7 Wonders."
+    },
+    {
+        "product_id": 428,
+        "supplier_id": 4,
+        "rationale": "A beautiful abstract game of creating habitats for animals."
+    },
+    {
+        "product_id": 429,
+        "supplier_id": 1,
+        "rationale": "A semi-cooperative tile-drafting game of city building."
+    },
+    {
+        "product_id": 430,
+        "supplier_id": 4,
+        "rationale": "A compact and cooperative city-building puzzle game."
+    },
+    {
+        "product_id": 431,
+        "supplier_id": 3,
+        "rationale": "The quintessential classic card game of betting and bluffing."
+    },
+    {
+        "product_id": 432,
+        "supplier_id": 1,
+        "rationale": "A dice-drafting and set-collection game with a farming theme."
+    },
+    {
+        "product_id": 433,
+        "supplier_id": 1,
+        "rationale": "A worker placement and resource management game."
+    },
+    {
+        "product_id": 434,
+        "supplier_id": 3,
+        "rationale": "The classic naval combat game of hidden placement and deduction."
+    },
+    {
+        "product_id": 435,
+        "supplier_id": 1,
+        "rationale": "A light tile-laying race game with puzzle elements."
+    },
+    {
+        "product_id": 436,
+        "supplier_id": 1,
+        "rationale": "A more complex, standalone version of the game Kingdomino."
+    },
+    {
+        "product_id": 437,
+        "supplier_id": 2,
+        "rationale": "An asymmetric card game of survival and hunting with a sci-fi horror theme."
+    },
+    {
+        "product_id": 438,
+        "supplier_id": 4,
+        "rationale": "A dexterity game that combines flicking discs with racing."
+    },
+    {
+        "product_id": 439,
+        "supplier_id": 1,
+        "rationale": "A tile-placement and resource management game."
+    },
+    {
+        "product_id": 440,
+        "supplier_id": 2,
+        "rationale": "A standalone game in the Small World series with an underground theme."
+    },
+    {
+        "product_id": 441,
+        "supplier_id": 2,
+        "rationale": "A classic grand strategy wargame."
+    },
+    {
+        "product_id": 442,
+        "supplier_id": 1,
+        "rationale": "A card game of set collection and engine building with an environmental theme."
+    },
+    {
+        "product_id": 443,
+        "supplier_id": 1,
+        "rationale": "A deep and strategic worker placement game set in the Medieval era."
+    },
+    {
+        "product_id": 444,
+        "supplier_id": 1,
+        "rationale": "A standalone game in the Pandemic series set in 19th-century Iberia."
+    },
+    {
+        "product_id": 445,
+        "supplier_id": 4,
+        "rationale": "A classic abstract strategy game of creating connected rows."
+    },
+    {
+        "product_id": 446,
+        "supplier_id": 1,
+        "rationale": "A worker-placement game with a dystopian theme and unique dice mechanics."
+    },
+    {
+        "product_id": 447,
+        "supplier_id": 4,
+        "rationale": "A word-building game that combines deck-building with spelling."
+    },
+    {
+        "product_id": 448,
+        "supplier_id": 1,
+        "rationale": "A revised edition of the classic deck-building game."
+    },
+    {
+        "product_id": 449,
+        "supplier_id": 2,
+        "rationale": "A tactical card game of fantasy combat with multiple factions."
+    },
+    {
+        "product_id": 450,
+        "supplier_id": 4,
+        "rationale": "A fast-paced two-player dexterity game."
+    },
+    {
+        "product_id": 451,
+        "supplier_id": 3,
+        "rationale": "A classic rummy-style card game."
+    },
+    {
+        "product_id": 452,
+        "supplier_id": 3,
+        "rationale": "A bluffing and memory game where players' roles are hidden."
+    },
+    {
+        "product_id": 453,
+        "supplier_id": 2,
+        "rationale": "A legacy game focused on adventure and combat."
+    },
+    {
+        "product_id": 454,
+        "supplier_id": 2,
+        "rationale": "A cooperative game of solving mysteries in a modern crime setting."
+    },
+    {
+        "product_id": 455,
+        "supplier_id": 1,
+        "rationale": "A dice-based cooperative game based on the popular Pandemic board game."
+    },
+    {
+        "product_id": 456,
+        "supplier_id": 4,
+        "rationale": "A fast-paced, tile-matching abstract strategy game."
+    },
+    {
+        "product_id": 457,
+        "supplier_id": 3,
+        "rationale": "A classic party game of listing items in categories."
+    },
+    {
+        "product_id": 458,
+        "supplier_id": 2,
+        "rationale": "The original edition of the epic fantasy wargame."
+    },
+    {
+        "product_id": 459,
+        "supplier_id": 1,
+        "rationale": "A card-based game of delivering potions with a bluffing mechanic."
+    },
+    {
+        "product_id": 460,
+        "supplier_id": 1,
+        "rationale": "A hand management and racing game with a mountaineering theme."
+    },
+    {
+        "product_id": 461,
+        "supplier_id": 2,
+        "rationale": "A storytelling and adventure game with a book of encounters."
+    },
+    {
+        "product_id": 462,
+        "supplier_id": 4,
+        "rationale": "A solo or cooperative card game of navigating a dream labyrinth."
+    },
+    {
+        "product_id": 463,
+        "supplier_id": 2,
+        "rationale": "The original edition of the epic wargame of intrigue in Westeros."
+    },
+    {
+        "product_id": 464,
+        "supplier_id": 1,
+        "rationale": "A strategic game where players spend their inheritance as fast as possible."
+    },
+    {
+        "product_id": 465,
+        "supplier_id": 2,
+        "rationale": "A deck-building game set in the fantasy world of Thunderstone."
+    },
+    {
+        "product_id": 466,
+        "supplier_id": 2,
+        "rationale": "A game of area control and secret identities set in Terry Pratchett's Discworld."
+    },
+    {
+        "product_id": 467,
+        "supplier_id": 1,
+        "rationale": "A deck-building game where players build forts and follow friends."
+    },
+    {
+        "product_id": 468,
+        "supplier_id": 2,
+        "rationale": "A campaign-based adventure game with a guild of heroes."
+    },
+    {
+        "product_id": 469,
+        "supplier_id": 1,
+        "rationale": "A deck-building game of galactic expansion with a role selection mechanic."
+    },
+    {
+        "product_id": 470,
+        "supplier_id": 2,
+        "rationale": "A cooperative game of sealing portals and fighting Lovecraftian horrors."
+    },
+    {
+        "product_id": 471,
+        "supplier_id": 3,
+        "rationale": "A chaotic, cooperative, real-time card game of escaping a dungeon."
+    },
+    {
+        "product_id": 472,
+        "supplier_id": 4,
+        "rationale": "A two-player tactical game of scientists vs. raptors."
+    },
+    {
+        "product_id": 473,
+        "supplier_id": 4,
+        "rationale": "A classic card game of forming combinations to score points."
+    },
+    {
+        "product_id": 474,
+        "supplier_id": 3,
+        "rationale": "A standalone, adults-only version of the popular party game Exploding Kittens."
+    },
+    {
+        "product_id": 475,
+        "supplier_id": 2,
+        "rationale": "A classic game of bidding and area control set in Renaissance Italy."
+    },
+    {
+        "product_id": 476,
+        "supplier_id": 1,
+        "rationale": "A strategic dice-driven game of building castles and positioning knights."
+    },
+    {
+        "product_id": 477,
+        "supplier_id": 1,
+        "rationale": "A thematic game of exploration and colonization in the age of discovery."
+    },
+    {
+        "product_id": 478,
+        "supplier_id": 1,
+        "rationale": "A deep and strategic worker-placement game with a unique action-following mechanic."
+    },
+    {
+        "product_id": 479,
+        "supplier_id": 1,
+        "rationale": "A classic economic game with route building and delivery mechanics."
+    },
+    {
+        "product_id": 480,
+        "supplier_id": 1,
+        "rationale": "A polyomino tile-laying game with a shared dice-drafting mechanic."
+    },
+    {
+        "product_id": 481,
+        "supplier_id": 2,
+        "rationale": "A competitive sandbox-style space adventure game."
+    },
+    {
+        "product_id": 482,
+        "supplier_id": 3,
+        "rationale": "The original version of the bluffing and negotiation party game."
+    },
+    {
+        "product_id": 483,
+        "supplier_id": 1,
+        "rationale": "A heavy economic Eurogame about industrial development inspired by Andrew Carnegie."
+    },
+    {
+        "product_id": 484,
+        "supplier_id": 2,
+        "rationale": "An epic area control and miniatures game set in ancient Egypt."
+    },
+    {
+        "product_id": 485,
+        "supplier_id": 2,
+        "rationale": "A standalone expansion for Dead of Winter with new locations and challenges."
+    },
+    {
+        "product_id": 486,
+        "supplier_id": 3,
+        "rationale": "A strategic card game about building a unicorn army and betraying friends."
+    },
+    {
+        "product_id": 487,
+        "supplier_id": 1,
+        "rationale": "A game of competitive archaeology with a unique time-track mechanic."
+    },
+    {
+        "product_id": 488,
+        "supplier_id": 2,
+        "rationale": "A complex legacy game where players found a franchise of an adventuring company."
+    },
+    {
+        "product_id": 489,
+        "supplier_id": 1,
+        "rationale": "A worker placement game about managing a nation's atomic weapons program."
+    },
+    {
+        "product_id": 490,
+        "supplier_id": 4,
+        "rationale": "A two-player abstract strategy game of building bridges and controlling islands."
+    },
+    {
+        "product_id": 491,
+        "supplier_id": 4,
+        "rationale": "An abstract strategy game with a reef-building theme."
+    },
+    {
+        "product_id": 492,
+        "supplier_id": 3,
+        "rationale": "A dark and humorous card game about managing a murderous inn."
+    },
+    {
+        "product_id": 493,
+        "supplier_id": 2,
+        "rationale": "A modern, cooperative board game set in the world of H.P. Lovecraft."
+    },
+    {
+        "product_id": 494,
+        "supplier_id": 1,
+        "rationale": "A game of set collection and combinations with a mythological Greek theme."
+    },
+    {
+        "product_id": 495,
+        "supplier_id": 2,
+        "rationale": "A massive and complex cooperative hobby game of survival and monster hunting."
+    },
+    {
+        "product_id": 496,
+        "supplier_id": 4,
+        "rationale": "A quantum trick-taking card game where a card's color is defined when played."
+    },
+    {
+        "product_id": 497,
+        "supplier_id": 4,
+        "rationale": "An abstract game of resource management and tactical pawn movement."
+    },
+    {
+        "product_id": 498,
+        "supplier_id": 3,
+        "rationale": "A lightning-fast shape and color recognition game."
+    },
+    {
+        "product_id": 499,
+        "supplier_id": 4,
+        "rationale": "A puzzle game where players race to solve individual puzzles with polyominoes."
+    },
+    {
+        "product_id": 500,
+        "supplier_id": 3,
+        "rationale": "The classic 'whole-brain' party game with a variety of activity categories."
+    }
+]

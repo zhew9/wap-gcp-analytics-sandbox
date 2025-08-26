@@ -1,0 +1,19 @@
+gcp_analytics_sandbox:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+
+      # Use dbt's env_var function to read the path from an environment variable
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+
+      project: "{{ env_var('GOOGLE_CLOUD_PROJECT') }}" # Your GCP project ID
+
+      # This is your default dataset
+      dataset: boardgame_retail
+
+      threads: 4
+      timeout_seconds: 300
+      # or EU or some GCP multi-region location
+      location: US

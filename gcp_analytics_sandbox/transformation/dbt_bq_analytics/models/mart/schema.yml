@@ -1,0 +1,317 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_key
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_channels
+    columns:
+      - name: channel_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_channels_history
+    columns:
+      - name: channel_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_payment_types
+    columns:
+      - name: payment_type_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_payment_types_history
+    columns:
+      - name: payment_type_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_payments
+    columns:
+      - name: transaction_payment_id
+        tests:
+          - not_null
+          - unique
+      - name: payment_type_sk
+        tests:
+          - relationships:
+              to: ref('dim_payment_types_history')
+              field: payment_type_sk
+
+  - name: dim_promotions
+    columns:
+      - name: promotion_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_promotions_history
+    columns:
+      - name: promotion_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_promotion_groups_history
+    columns:
+      - name: promotion_group_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_discounts
+    columns:
+      - name: transaction_discount_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_sk
+        tests:
+          - relationships:
+              to: ref('dim_customers_history')
+              field: customer_sk
+      - name: promotion_sk
+        tests:
+          - relationships:
+              to: ref('dim_promotions_history')
+              field: promotion_sk
+
+  - name: brg_product_promotion_group_history
+    columns:
+      - name: product_promotion_group_sk
+        tests:
+          - not_null
+          - unique
+      - name: product_sk
+        tests:
+          - relationships:
+              to: ref('dim_products_history')
+              field: product_sk
+      - name: promotion_group_sk
+        tests:
+          - relationships:
+              to: ref('dim_promotion_groups_history')
+              field: promotion_group_sk
+
+  - name: dim_authors
+    columns:
+      - name: author_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_authors_history
+    columns:
+      - name: author_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_categories
+    columns:
+      - name: category_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_categories_history
+    columns:
+      - name: category_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_products
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_products_history
+    columns:
+      - name: product_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_publishers
+    columns:
+      - name: publisher_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_publishers_history
+    columns:
+      - name: publisher_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_suppliers
+    columns:
+      - name: supplier_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_suppliers_history
+    columns:
+      - name: supplier_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: brg_products_authors_history
+    columns:
+      - name: product_author_sk
+        tests:
+          - not_null
+          - unique
+      - name: product_sk
+        tests:
+          - relationships:
+              to: ref('dim_products_history')
+              field: product_sk
+      - name: author_sk
+        tests:
+          - relationships:
+              to: ref('dim_authors_history')
+              field: author_sk
+
+  - name: brg_products_categories_history
+    columns:
+      - name: product_category_sk
+        tests:
+          - not_null
+          - unique
+      - name: product_sk
+        tests:
+          - relationships:
+              to: ref('dim_products_history')
+              field: product_sk
+      - name: category_sk
+        tests:
+          - relationships:
+              to: ref('dim_categories_history')
+              field: category_sk
+
+  - name: brg_products_publishers_history
+    columns:
+      - name: product_publisher_sk
+        tests:
+          - not_null
+          - unique
+      - name: product_sk
+        tests:
+          - relationships:
+              to: ref('dim_products_history')
+              field: product_sk
+      - name: publisher_sk
+        tests:
+          - relationships:
+              to: ref('dim_publishers_history')
+              field: publisher_sk
+
+  - name: brg_products_suppliers_history
+    columns:
+      - name: product_supplier_sk
+        tests:
+          - not_null
+          - unique
+      - name: product_sk
+        tests:
+          - relationships:
+              to: ref('dim_products_history')
+              field: product_sk
+      - name: supplier_sk
+        tests:
+          - relationships:
+              to: ref('dim_suppliers_history')
+              field: supplier_sk
+
+  - name: dim_customers
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_customers_history
+    columns:
+      - name: customer_sk
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_returns
+    columns:
+      - name: transaction_line_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_sk
+        tests:
+          - relationships:
+              to: ref('dim_customers_history')
+              field: customer_sk
+      - name: product_sk
+        tests:
+          - relationships:
+              to: ref('dim_products_history')
+              field: product_sk
+      - name: channel_sk
+        tests:
+          - relationships:
+              to: ref('dim_channels_history')
+              field: channel_sk
+
+  - name: fct_sales
+    columns:
+      - name: transaction_line_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_sk
+        tests:
+          - relationships:
+              to: ref('dim_customers_history')
+              field: customer_sk
+      - name: product_sk
+        tests:
+          - relationships:
+              to: ref('dim_products_history')
+              field: product_sk
+      - name: channel_sk
+        tests:
+          - relationships:
+              to: ref('dim_channels_history')
+              field: channel_sk
+
+  - name: fct_transactions
+    columns:
+      - name: transaction_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_sk
+        tests:
+          - relationships:
+              to: ref('dim_customers_history')
+              field: customer_sk
+      - name: channel_sk
+        tests:
+          - relationships:
+              to: ref('dim_channels_history')
+              field: channel_sk

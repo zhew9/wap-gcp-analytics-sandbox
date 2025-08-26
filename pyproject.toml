@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gcp_analytics_sandbox"
+authors = [{ name = "Zhe Wang", email = "zhew09@gmail.com" }]
+version = "0.1.0"
+description = """
+A mock GCP data analytics platform, with a local dev environment, consisting of an ELT 
+batch (incremental load) pipeline orchestrated by Dagster, using: DuckDB, 
+Python data generators and connectors, dbt, BigQuery, and GCP ML/AI services.
+"""
+requires-python = ">=3.9"
+dependencies = [
+    "dagster>=1.10.20",
+    "dagster-webserver",
+    "duckdb",
+    "dagster-duckdb",
+    "dagster-gcp",
+    "dbt-bigquery",
+    "dagster-dbt",
+    "pyarrow",
+    "gcsfs",
+    "dateutils",
+    "pydantic",
+    "polars",
+]
+
+[tool.dagster]
+module_name = "gcp_analytics_sandbox.definitions"
+code_location_name = "gcp_analytics_sandbox"

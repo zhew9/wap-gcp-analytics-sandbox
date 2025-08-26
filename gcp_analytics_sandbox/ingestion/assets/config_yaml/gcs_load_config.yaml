@@ -1,0 +1,436 @@
+gcs_load_asset_configurations:
+  # customers
+  load_customers_to_gcs:
+    asset_definition:
+      partition_type: daily
+      # be careful when using 'weekly' or 'monthly', e.g. weekly partitions may logically start on a different
+      # day than the specified partitions_start_date (e.g. the date given is not a Sunday, the logical partition usually start on sundays)
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      # only used for week or montly partitions, e.g. 0-31 for monthly (0 for first day of month)
+      # and 0-7 for weekly (0 being sunday/default)
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: dynamic_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - generate_customers
+    gcs_load_config:
+      table_name: customers
+      date_field: date_modified
+      data_lake_partitioning:
+      gcs_base_path: datalake_raw/boardgame_retail_raw/customers
+      compression:
+      # if load_all_cols = False, we can specify columns like excluding PII(name, email, address, etc.) or unnecessary columns early
+      load_all_cols: True
+      # recommended to keep load_all_cols as 'True'
+      # explicity specifying columns requires a fixed model for generated data, but the data generation models
+      # are in development as of writing this part of the code
+      # but ofc in production it's advised to define table columns explicitly for ingest
+      columns:
+
+  # transaction_headers
+  load_transaction_headers_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: dynamic_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - generate_transactions
+        - generate_customers
+    gcs_load_config:
+      table_name: transaction_headers
+      date_field: date_modified
+      data_lake_partitioning:
+      gcs_base_path: datalake_raw/boardgame_retail_raw/transaction_headers
+      compression:
+      load_all_cols: True
+      columns:
+
+  # transaction_lines
+  load_transaction_lines_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: dynamic_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - generate_transactions
+        - generate_customers
+    gcs_load_config:
+      table_name: transaction_lines
+      date_field: date_modified
+      data_lake_partitioning:
+      gcs_base_path: datalake_raw/boardgame_retail_raw/transaction_lines
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_transaction_discounts_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: dynamic_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - generate_transactions
+        - generate_customers
+    gcs_load_config:
+      table_name: transaction_discounts
+      date_field: date_modified
+      data_lake_partitioning:
+      gcs_base_path: datalake_raw/boardgame_retail_raw/transaction_discounts
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_transaction_payments_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: dynamic_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - generate_transactions
+        - generate_customers
+    gcs_load_config:
+      table_name: transaction_payments
+      date_field: date_modified
+      data_lake_partitioning:
+      gcs_base_path: datalake_raw/boardgame_retail_raw/transaction_payments
+      compression:
+      load_all_cols: True
+      columns:
+
+  # static catalog:
+  #discounts
+  load_promotions_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: promotions
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/promotions
+      compression:
+      load_all_cols: True
+      columns:
+    # products
+  load_products_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: products
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/products
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_channels_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: channels
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/channels
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_suppliers_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: suppliers
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/suppliers
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_categories_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: categories
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/categories
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_authors_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: authors
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/authors
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_payment_types_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: payment_types
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/payment_types
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_publishers_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: publishers
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/publishers
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_publishers_products_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: publishers_products
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/publishers_products
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_promotion_groups_products_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: promotion_groups_products
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/promotion_groups_products
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_promotion_groups_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: promotion_groups
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/promotion_groups
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_authors_products_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: authors_products
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/authors_products
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_categories_products_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: categories_products
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/categories_products
+      compression:
+      load_all_cols: True
+      columns:
+
+  load_suppliers_products_to_gcs:
+    asset_definition:
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      day_offset:
+      kinds:
+        - gcs
+        - python
+        - duckdb
+      group_name: static_ingestion_duckdb_to_gcs
+      asset_dependencies:
+        - load_pregenerated_catalog
+    gcs_load_config:
+      table_name: suppliers_products
+      date_field: date_modified
+      data_lake_partitioning: daily
+      gcs_base_path: datalake_raw/boardgame_retail_raw/suppliers_products
+      compression:
+      load_all_cols: True
+      columns:

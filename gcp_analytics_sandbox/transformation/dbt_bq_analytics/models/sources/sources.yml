@@ -1,0 +1,48 @@
+version: 2
+
+sources:
+  - name: boardgame_retail_raw # A name for your raw data source
+    description: "BigQuery dataset of raw source data from the boardgame retail OLTP system."
+
+    # This specifies the dataset where the raw tables are located.
+    # 'database' maps to your GCP project ID, which is inherited from profiles.yml.
+    schema: boardgame_retail_raw
+
+    tables:
+      # dynamic tables
+      - name: customers
+      - name: transaction_headers
+      - name: transaction_lines
+      - name: transaction_discounts
+      - name: transaction_payments
+
+      # date dimension
+      - name: date_dimension
+
+      # static tables (at least in our default example):
+      - name: authors
+      - name: authors_products
+      - name: categories
+      - name: categories_products
+      - name: channels
+      - name: payment_types
+      - name: products
+      - name: promotions
+      - name: promotion_groups
+      - name: promotion_groups_products
+      - name: publishers
+      - name: publishers_products
+      - name: suppliers
+      - name: suppliers_products
+
+      # ... and so on for new raw tables
+  - name: write_audit_publish
+    tables:
+      - name: audit_environment_enabled
+        meta:
+          dagster:
+            asset_key: ["audit_environment_enabled"]
+      - name: audit_dataset_validated
+        meta:
+          dagster:
+            asset_key: ["audit_dataset_validated"]

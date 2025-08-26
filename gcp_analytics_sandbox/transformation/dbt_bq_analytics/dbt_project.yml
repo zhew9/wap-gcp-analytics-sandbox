@@ -1,0 +1,60 @@
+name: "gcp_analytics_sandbox"
+version: "1.0.0"
+config-version: 2
+
+profile: "gcp_analytics_sandbox"
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+
+# analysis-paths: ["analyses"]
+# test-paths: ["tests"]
+# seed-paths: ["seeds"]
+# macro-paths: ["macros"]
+
+# Define where your dbt models are located
+model-paths: ["models"]
+# Define where your snapshots are located
+snapshot-paths: ["snapshots"]
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In dbt, the default materialization for a model is a view. This means, when you run
+# dbt run or dbt build, all of your models will be built as a view in your data platform.
+# The configuration below will override this setting for models in the example folder to
+# instead be materialized as tables. Any models you add to the root of the models folder will
+# continue to be built as views. These settings can be overridden in the individual model files
+# using the `{{ config(...) }}` macro.
+
+# Configure your snapshots
+snapshots:
+  gcp_analytics_sandbox:
+    # Snapshots will be created in the 'boardgame_retail_snapshots' dataset.
+    +target_schema: boardgame_retail_snapshots
+
+# Configure your models
+models:
+  gcp_analytics_sandbox:
+    clean: # Corresponds to models/staging/
+      +schema: clean
+
+    staging: # Corresponds to models/staging/
+      +materialized: view # use + to override default values
+      +schema: staging
+
+    # equivalent to medallion's intermediate layer, but more compute heavy, moving more computation from
+    # from building dimension and fact tables in the core layer into the prep layer where possible, to lower
+    # the burden for the Write-Audit-Publish aka blue/green deployment process, where we may repeat building
+    # the core and mart layers for auditing purposes (taking advantage of zero-copy clones for big/incremental
+    # tables, but still full-refresh of smaller tables)
+    prep:
+      +schema: prep
+
+    # Materialize final core models and marts using blue/green deployment (a form of Write-Audit-Publish)
+    mart:
+      +schema: "mart_{{ var('env_suffix', 'blue') }}"
+
+    live:
+      +schema: live

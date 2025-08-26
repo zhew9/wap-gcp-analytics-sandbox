@@ -1,0 +1,769 @@
+bq_load_asset_configurations:
+  # date dimension
+  load_date_dimension_to_bq:
+    dagster_asset_definition:
+      asset_name: load_date_dimension_to_bq
+      partition_type:
+      partitions_start_date:
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: date_dimension_generation_and_load
+      upstream_input_asset: generate_date_dim_load_to_gcs
+      asset_dependencies:
+        - generate_date_dim_load_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: date_dimension
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      # The date dimension table is not partitioned by an ingestion timestamp but by the date itself.
+      table_time_partitioning:
+        partition_field: full_date
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - year_number
+        - quarter_number
+        - month_number
+
+  #customers
+  load_customers_to_bq:
+    dagster_asset_definition:
+      asset_name: load_customers_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: dynamic_ingestion_gcs_to_bq
+      upstream_input_asset: load_customers_to_gcs
+      asset_dependencies:
+        - load_customers_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: customers
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      #range partitioning is also possible (only one of time and range partitioning can be specified)
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      # fields to cluster records by, can have both partitioning and clustering fields (https://cloud.google.com/bigquery/docs/clustered-tables)
+      clustering_fields:
+        - customer_id
+
+  # transaction/order headers
+  load_transaction_headers_to_bq:
+    dagster_asset_definition:
+      asset_name: load_transaction_headers_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: dynamic_ingestion_gcs_to_bq
+      upstream_input_asset: load_transaction_headers_to_gcs
+      asset_dependencies:
+        - load_transaction_headers_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: transaction_headers
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - transaction_id
+
+  # transaction_lines
+  load_transaction_lines_to_bq:
+    dagster_asset_definition:
+      asset_name: load_transaction_lines_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: dynamic_ingestion_gcs_to_bq
+      upstream_input_asset: load_transaction_lines_to_gcs
+      asset_dependencies:
+        - load_transaction_lines_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: transaction_lines
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - transaction_line_id
+  # transaction_discounts
+  load_transaction_discounts_to_bq:
+    dagster_asset_definition:
+      asset_name: load_transaction_discounts_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: dynamic_ingestion_gcs_to_bq
+      upstream_input_asset: load_transaction_discounts_to_gcs
+      asset_dependencies:
+        - load_transaction_discounts_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: transaction_discounts
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - transaction_discount_id
+
+  # transaction_payments
+  load_transaction_payments_to_bq:
+    dagster_asset_definition:
+      asset_name: load_transaction_payments_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: dynamic_ingestion_gcs_to_bq
+      upstream_input_asset: load_transaction_payments_to_gcs
+      asset_dependencies:
+        - load_transaction_payments_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: transaction_payments
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - transaction_payment_id
+
+  # channels
+  load_channels_to_bq:
+    dagster_asset_definition:
+      asset_name: load_channels_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_channels_to_gcs
+      asset_dependencies:
+        - load_channels_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: channels
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - channel_id
+
+  # suppliers
+  load_suppliers_to_bq:
+    dagster_asset_definition:
+      asset_name: load_suppliers_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_suppliers_to_gcs
+      asset_dependencies:
+        - load_suppliers_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: suppliers
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - supplier_id
+
+  # categories
+  load_categories_to_bq:
+    dagster_asset_definition:
+      asset_name: load_categories_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_categories_to_gcs
+      asset_dependencies:
+        - load_categories_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: categories
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - category_id
+
+  # authors
+  load_authors_to_bq:
+    dagster_asset_definition:
+      asset_name: load_authors_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_authors_to_gcs
+      asset_dependencies:
+        - load_authors_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: authors
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - author_id
+
+  # payment_types
+  load_payment_types_to_bq:
+    dagster_asset_definition:
+      asset_name: load_payment_types_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_payment_types_to_gcs
+      asset_dependencies:
+        - load_payment_types_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: payment_types
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - payment_type_id
+
+  # publishers_products
+  load_publishers_products_to_bq:
+    dagster_asset_definition:
+      asset_name: load_publishers_products_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_publishers_products_to_gcs
+      asset_dependencies:
+        - load_publishers_products_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: publishers_products
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - publisher_id
+        - product_id
+
+  # promotion_groups_products
+  load_promotion_groups_products_to_bq:
+    dagster_asset_definition:
+      asset_name: load_promotion_groups_products_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_promotion_groups_products_to_gcs
+      asset_dependencies:
+        - load_promotion_groups_products_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: promotion_groups_products
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - promotion_group_id
+        - product_id
+
+  # promotion_groups
+  load_promotion_groups_to_bq:
+    dagster_asset_definition:
+      asset_name: load_promotion_groups_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_promotion_groups_to_gcs
+      asset_dependencies:
+        - load_promotion_groups_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: promotion_groups
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - promotion_group_id
+
+  # authors_products
+  load_authors_products_to_bq:
+    dagster_asset_definition:
+      asset_name: load_authors_products_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_authors_products_to_gcs
+      asset_dependencies:
+        - load_authors_products_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: authors_products
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - author_id
+        - product_id
+
+  # categories_products
+  load_categories_products_to_bq:
+    dagster_asset_definition:
+      asset_name: load_categories_products_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_categories_products_to_gcs
+      asset_dependencies:
+        - load_categories_products_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: categories_products
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - category_id
+        - product_id
+
+  # discounts
+  load_promotions_to_bq:
+    dagster_asset_definition:
+      asset_name: load_promotions_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_promotions_to_gcs
+      asset_dependencies:
+        - load_promotions_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: promotions
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - promotion_id
+
+  # products
+  load_products_to_bq:
+    dagster_asset_definition:
+      asset_name: load_products_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_products_to_gcs
+      asset_dependencies:
+        - load_products_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: products
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - product_id
+
+  # publishers
+  load_publishers_to_bq:
+    dagster_asset_definition:
+      asset_name: load_publishers_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_publishers_to_gcs
+      asset_dependencies:
+        - load_publishers_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: publishers
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - publisher_id
+
+  # suppliers_products
+  load_suppliers_products_to_bq:
+    dagster_asset_definition:
+      asset_name: load_suppliers_products_to_bq
+      partition_type: daily
+      partitions_start_date: "2025-01-01"
+      partitions_end_date:
+      date_field: date_modified
+      kinds:
+        - python
+        - gcp
+        - bigquery
+      group_name: static_ingestion_gcs_to_bq
+      upstream_input_asset: load_suppliers_products_to_gcs
+      asset_dependencies:
+        - load_suppliers_products_to_gcs
+    bq_load_job_config:
+      dataset_id: boardgame_retail_raw
+      dataset_options:
+        create_dataset_if_missing: true
+        location: null
+        description: null
+        labels: null
+        default_partition_expiration_days: null
+        default_partition_expiration_ms: null
+        default_table_expiration_days: null
+        default_table_expiration_ms: null
+      table_name: suppliers_products
+      schema_autodetect: True
+      #make sure it lines up with your GCS_load_asset_config.yaml
+      table_schema:
+      table_time_partitioning:
+        partition_field: date_modified
+        partition_type: DAY
+        partition_expiration_days: null
+      clustering_fields:
+        - supplier_id
+        - product_id
