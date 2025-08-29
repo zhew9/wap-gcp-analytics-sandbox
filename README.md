@@ -64,7 +64,7 @@ But I thought it might be useful to other data professionals or enthusiasts in t
 
 1.  **Clone the repo**:
     ```bash
-    git clone [https://github.com/zhew9/gcp-analytics-sandbox.git](https://github.com/zhew9/gcp-analytics-sandbox.git)
+    git clone [https://github.com/zhew9/wap-gcp-analytics-sandbox.git](https://github.com/zhew9/wap-gcp-analytics-sandbox.git)
     ```
 2.  **Create and activate a virtual environment**:
     ```bash
