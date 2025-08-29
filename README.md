@@ -41,7 +41,7 @@ This project may also be a useful reference for data professionals or enthusiast
 
 ### Original Motivations:
 
-I originally built this pipeline for my own Proof-of-Concepts on GCP, most recent of which was for testing a form of Write-Audit-Publish using Blue Green Deployment approach for View layer promotion for BigQuery* (hence the project name BlueGreenPrint).
+I originally built this pipeline for my own Proof-of-Concepts on GCP, most recent of which was for testing a form of Write-Audit-Publish using a Blue Green Deployment approach for cloning incremental tables and promoting sources for downstream View layers in BigQuery* (hence the project name BlueGreenPrint).
 
 But I thought it might be useful to other data professionals or enthusiasts in the community, either as a ready-to-go usable dev pipeline or as a learning resource.
 
@@ -64,7 +64,7 @@ But I thought it might be useful to other data professionals or enthusiasts in t
 
 1.  **Clone the repo**:
     ```bash
-    git clone [https://github.com/zhew9/wap-gcp-analytics-sandbox.git](https://github.com/zhew9/wap-gcp-analytics-sandbox.git)
+    git clone https://github.com/zhew9/wap-gcp-analytics-sandbox.git
     ```
 2.  **Create and activate a virtual environment**:
     ```bash
