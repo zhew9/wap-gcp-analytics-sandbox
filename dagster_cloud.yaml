@@ -1,4 +1,0 @@
-locations:
-- code_source:
-    module_name: gcp_analytics_sandbox.definitions
-  location_name: gcp_analytics_sandbox
